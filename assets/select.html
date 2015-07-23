@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>测试select</title>
+		<script type="text/javascript" src="file:///android_asset/jquery-1.11.2.min.js"></script>
+	</head>
+	<body>
+		<select name="province" id="search-province">
+			<option value="">地区不限</option>
+			<option value="1">北京</option>
+			<option value="2">河南</option>
+			<option value="3">广西</option>
+			<option value="4">山东</option>
+			<option value="5">青海</option>
+			<option selected="selected" value="6">江西</option>
+			<option value="7">湖北</option>
+			<option value="8">西藏</option>
+			<option value="9">新疆</option>
+			<option value="10">四川</option>
+			<option value="12">湖南</option>
+			<option value="13">内蒙古</option>
+			<option value="14">上海</option>
+			<option value="15">浙江</option>
+			<option value="16">重庆</option>
+			<option value="17">海南</option>
+			<option value="18">河北</option>
+			<option value="19">吉林</option>
+			<option value="20">江苏</option>
+			<option value="21">贵州</option>
+			<option value="23">黑龙江</option>
+			<option value="24">山西</option>
+			<option value="25">甘肃</option>
+			<option value="26">辽宁</option>
+			<option value="27">天津</option>
+			<option value="28">广东</option>
+			<option value="29">宁夏</option>
+			<option value="30">陕西</option>
+			<option value="32">福建</option>
+			<option value="33">安徽</option>
+			<option value="34">云南</option>
+		</select>
+		<script>
+		//选择地区
+		$("#search-province").change(function () {
+		    var province = $("#search-province").find("option:selected").text();
+		    alert(province);
+		});
+	</script>
+	</body>
+</html>
